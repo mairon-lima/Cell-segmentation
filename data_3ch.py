@@ -1,4 +1,4 @@
-# This file was used when the input is three-channel image and the method is transfer learning
+# This file is used when the input is three-channel image and the method is transfer learning
 
 from __future__ import print_function
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
