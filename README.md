@@ -9,7 +9,7 @@ modelUXception is the U-net model file that has coefficients from the Xception n
 
 data*.py files are the data prepration files required for deep learning models. 
 
-train_valid* files are the jupyter notebook files that shows the results of the training and validation process. vXXX shows the version of each file. In each version, we test performance of a specific model with a loss function and input image. See the results_table.xlsx file to see which file version is associated with the training&validation situation.
+train_valid* files are the jupyter notebook files that shows the results of the training and validation process. vXXX shows the version of each file. In each version, we test performance of a specific model with a loss function and input image. See the train_validation_performance_results.xlsx file to see which file version is associated with the training&validation situation.
 
 For more information, please refer to our journal article.
 
