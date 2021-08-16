@@ -11,6 +11,8 @@ data*.py files are the data prepration files required for deep learning models.
 
 train_valid* files are the jupyter notebook files that shows the results of the training and validation process. vXXX shows the version of each file. In each version, we test performance of a specific model with a loss function and input image. See the train_validation_performance_results.xlsx file to see which file version is associated with the training&validation situation.
 
+Model performance evaluation codes are provided in eval_performance.m , dice_score.m , and metrics.m files.
+
 For more information, please refer to our journal article.
 
 Volkan Müjdat TİRYAKİ, Virginia M. AYRES, Ijaz AHMED, David I. SHREIBER.
