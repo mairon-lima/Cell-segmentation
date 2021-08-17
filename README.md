@@ -13,6 +13,10 @@ train_valid* files are the jupyter notebook files that shows the results of the 
 
 Model performance evaluation codes are provided in eval_performance.m , dice_score.m , and metrics.m files.
 
+cj_ast24h_plg_31jul11_001_nmnmv_hi is an example AFM height image. This is an 8-bit grayscale image.
+cj_ast24h_plg_31jul11_001_nmnmv_label is the ground truth cell segmentation binary image. (0=culture surface, 1=cell surface)
+cj_ast24h_plg_31jul11_001_nmnmv_predict is the cell segmentation prediction binary image. (0=culture surface, 1=cell surface)
+
 For more information, please refer to our journal article.
 
 Volkan Müjdat TİRYAKİ, Virginia M. AYRES, Ijaz AHMED, David I. SHREIBER.
