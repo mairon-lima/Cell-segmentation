@@ -4,7 +4,7 @@ The codes in this repository shows how we implemented various types of U-nets in
 
 modelXLHzc are the U-net model files that has 'X' network depth. modelUnetVGG16 is the U-net model file that has coefficients from the VGG16 network. modelUnetVGG19 is the U-net model file that has coefficients from the VGG19 network. modelUXception is the U-net model file that has coefficients from the Xception network.
 
-data*.py files are the data prepration files required for deep learning models.
+data*.py files are the data prepration files required for training, validating and testing deep learning models.
 
 train_valid*.ipynb files are the jupyter notebook files that shows the results of the training and validation process. vXXX shows the version of each file. In each version, we test performance of a specific model with a loss function and input image. See the train_validation_performance_results.xlsx file to see which file version is associated with the training&validation situation.
 
