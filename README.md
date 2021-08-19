@@ -8,7 +8,7 @@ data*.py files are the data prepration files required for training, validating a
 
 train_valid*.ipynb files are the jupyter notebook files that shows the results of the training and validation process. vXXX shows the version of each file. In each version, we test performance of a specific model with different network depths, loss functions, transfer learning, and input image modalities. We used 5-fold cross-validation. The train_validation_performance_results.xlsx file shows which file version is associated with the cross-validation situation.
 
-test_unet5L_cell_11jul21_v001.ipynb and test_unetXception_afmh_04jul21_v010.ipynb files are the jupyter notebook files that show the codes for testing the #1 and #10 model without training. Test results are saved to the specified folder for further evaluation. The unet_cell_seg_v001_5.hdf5 model file should be downloaded for testing. The unet_cell_seg_v010_2.hdf5 UXception model file size is ~450MB, and we could not upload the file to this repository due to the file size limit in GitHub pages.
+test_unet5L_cell_11jul21_v001.ipynb and test_unetXception_afmh_04jul21_v010.ipynb files are the jupyter notebook files that show the codes for testing the #1 and #10 model without training. Test results are saved to the specified folder for further evaluation. The unet_cell_seg_v001_5.hdf5 model file should be downloaded for testing. The unet_cell_seg_v010_2.hdf5 UXception model file size is ~450MB, and it was not uploaded the file to this repository due to the file size limit in GitHub pages.
  
 Model performance evaluation codes are provided in eval_performance.m , dice_score.m , and metrics.m files. 
 
