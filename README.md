@@ -12,7 +12,7 @@ test_unet5L_cell_11jul21_v001.ipynb file is the jupyter notebook file that shows
  
 Model performance evaluation codes are provided in eval_performance.m , dice_score.m , and metrics.m files.
 
-cj_ast24h_plg_31jul11_001_nmnmv_hi is an example 8-bit grayscale AFM height image. The brighter the pixel, the higher the location of that pixel. cj_ast24h_plg_31jul11_001_nmnmv_label is the cell segmentation ground truth binary image (0=PLL glass surface, 1=cell surface). cj_ast24h_plg_31jul11_001_nmnmv_predict is the cell segmentation prediction binary image (0=PLL glass surface, 1=cell surface).
+cj_ast24h_plg_31jul11_001_nmnmv_hi is an example 8-bit grayscale AFM height image. (c=contact mode image, j=scanner type, ast=astrocytes, 24h=culture time, plg= PLL glass, 31jul11=image capture date, 001=file number, nmnmv is the data extraction setting which are nm, nm, and volts, hi=height image.) The brighter the pixel, the higher the location of that pixel. In general, cell surface pixels are higher than PLL glass pixels. cj_ast24h_plg_31jul11_001_nmnmv_label is the cell segmentation ground truth binary image (0=PLL glass surface, 1=cell surface). cj_ast24h_plg_31jul11_001_nmnmv_predict is the cell segmentation prediction binary image (0=PLL glass surface, 1=cell surface).
 
 For more information, please refer to our journal article.
 
