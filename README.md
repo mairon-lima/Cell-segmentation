@@ -8,7 +8,7 @@ modelXLHzc* are the U-net model creation files that has 'X' network depth. model
 
 data*.py files are the data prepration files required for training, validating, and testing deep learning models. data.py is used when the input is single channel image and the method is transfer learning. data_1ch.py is used when the input image is single channel and the method is learning from scratch. data_3ch.py is used when the input image is three-channel and the method is transfer learning.
 
-Segmentation performance evaluation codes are provided in eval_performance.m  and metrics.m files under the eval_performance folder.
+Segmentation performance evaluation codes are provided in eval_performance.m  and metrics.m files under the test folder. Open eval_performance with Octave or Matlab, run the codes and you will see the results of evaluation metrics.
 
 cj_ast24h_plg_31jul11_001_nmnmv_hi is an example grayscale 512x512 pixels AFM height image (Information about file name abbreviation: c=contact mode image, j=scanner type, ast=astrocytes, 24h=culture time, plg= PLL glass, 31jul11=image capture date, 001=file number, nmnmv is the data extraction setting which are nm, nm, and volts, hi=height image). In an AFM height image, the brighter the pixel, the higher the location of that pixel. In general, cell surface pixels are higher than PLL glass pixels. cj_ast24h_plg_31jul11_001_nmnmv_label is the cell segmentation ground truth binary image (0=PLL glass surface, 1=cell surface). cj_ast24h_plg_31jul11_001_nmnmv_predict is the cell segmentation prediction binary image (0=PLL glass surface, 1=cell surface).
 
