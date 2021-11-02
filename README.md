@@ -14,6 +14,22 @@ Segmentation validation and test performance evaluation codes are provided in ev
 
 cj_ast24h_plg_31jul11_001_nmnmv_hi is an example grayscale 512x512 pixels AFM height image (Information about file name abbreviation: c=contact mode image, j=scanner type, ast=astrocytes, 24h=culture time, plg= PLL glass, 31jul11=image capture date, 001=file number, nmnmv is the data extraction setting which are nm, nm, and volts, hi=height image). In an AFM height image, the brighter the pixel, the higher the location of that pixel. In general, cell surface pixels are higher than PLL glass pixels. cj_ast24h_plg_31jul11_001_nmnmv_label is the cell segmentation ground truth binary image (0=PLL glass surface, 1=cell surface). cj_ast24h_plg_31jul11_001_nmnmv_predict is the cell segmentation prediction binary image (0=PLL glass surface, 1=cell surface).
 
+Testing instructions:
+Install Python 3.6, Tensorflow, Keras, numpy, skimage, and jupyter notebook to your computer. To test the pretrained model, you do not have to have a graphic processing unit.
+Here are the steps to test the pretrained model:
+Download test_unet5L_cell_11jul21_v001.ipynb to your folder. 
+Download eight AFM height test images (0.png … 7.png) to /test/
+Download trained model file ‘unet_cell_seg_v011_5.hdf5’ to /files/. Actually, this file does not belong to the best performing model. The best performing model is U-VGG19 but the file size is larger than 400MB so we decided to put the five layer U-net model trained from scratch.
+Download data_1ch and model5LHzc.py to your folder.
+Open test_unet5L_cell_11jul21_v001 and execute the codes. The segmentation results will be saved to /test/ as a png file in less than a minute. 
+To evaluate your test performance, download the ground truth images to (0_gt.png, 1_gt.png, … 7_gt.png) /test/ folder. Run the evaluation_performance.m file. You will see performance evaluation results using accuracy, precision, recall, Dice’s similarity coefficient, Matthews correlation coefficient, and confusion matrix.
+If you want to test the model with your own images, make sure to rename them from 0 to n-1, where n is the number of images. 
+
+
+Training instructions:
+You should have a GPU on your computer to train a model. If you have a GPU on your computer, make sure that you install everything correctly. This requires some attention. We found the following youtube video by Dr. Jeff Heaton very useful for instructions about installing Tensorflow Keras with a GPU for Windows operating systems: https://www.youtube.com/watch?v=-Q6SM_usn84  He also has installation instruction videos for other OS, so check to see his channel. Install Python 3.6, Tensorflow, Keras, numpy, skimage, and jupyter notebook to your computer. You can also train your own model on Google Colab but there are some time restrictions.
+Create training and validation folders. Open train_valid_unet5L_cell_30may21_v001.ipynb with jupyter notebook. Make sure to change the folder names if needed. Lower the batch size if you get memory errors. Execute the codes. 
+
 For more information, please refer to our manuscript or contact us by sending an e-mail to corresponding author (tiryakiv@siirt.edu.tr).
 
 Volkan Müjdat TİRYAKİ, Virginia M. AYRES, Ijaz AHMED, David I. SHREIBER.
