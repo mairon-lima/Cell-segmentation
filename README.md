@@ -4,8 +4,6 @@ The codes in this repository belong to the methodology in the manuscript entitle
 
 train_valid*.ipynb files are the jupyter notebook files that shows the codes and results of the training and validation process. vXXX shows the version of each file. In each version, we validate performance of a specific model with different network depths, loss functions, transfer learning, and input image modalities. We used 5-fold cross-validation. The train_validation_performance_results.xlsx file shows which file version is associated with the cross-validation situation. Performance values are provided for each validation fold separately in the table columns (val_dice1, val_dice2 etc.) [3-13].
 
-test_unet5L_cell_11jul21_v001.ipynb and test_unetXception_afmh_04jul21_v010.ipynb files are the jupyter notebook files that show the codes for testing the #1 and #10 model without training. Test results are saved to the specified folder for further evaluation. The unet_cell_seg_v001_5.hdf5 model file should be downloaded for testing.
-
 modelXLHzc* are the U-net model creation files that has 'X' network depth. modelUnetVGG16, modelUnetVGG19, and modelUXception are the U-net model creation files that have coefficients from the VGG16, the VGG19, and the Xception networks [14-17].
 
 data*.py files are the data prepration files required for training, validating, and testing deep learning models. data.py is used when the input is single channel image and the method is transfer learning. data_1ch.py is used when the input image is single channel and the method is learning from scratch. data_3ch.py is used when the input image is three-channel and the method is transfer learning.
@@ -19,9 +17,9 @@ Install Python 3.6, Tensorflow, Keras, numpy, skimage, and jupyter notebook to y
 Here are the steps to test the pretrained model:
 Download test_unet5L_cell_11jul21_v001.ipynb to your folder. 
 Download eight AFM height test images (0.png … 7.png) to /test/
-Download trained model file ‘unet_cell_seg_v011_5.hdf5’ to /files/. Actually, this file does not belong to the best performing model. The best performing model is U-VGG19 but the file size is larger than 400MB so we decided to put the five layer U-net model trained from scratch.
+Download trained model file ‘unet_cell_seg_v011_5.hdf5’ to /files/. Actually, this file does not belong to the best performing model. The best performing model is U-VGG19 but the file size is larger than 400MB so we decided to put the five layer U-net model 11 which was trained from scratch using log cosh dice. You can see this model and other models' performanes in the valid_performance_512_68_cell_seg_30oct21.xlsx file.
 Download data_1ch and model5LHzc.py to your folder.
-Open test_unet5L_cell_11jul21_v001 and execute the codes. The segmentation results will be saved to /test/ as a png file in less than a minute. 
+Open test_unet5L_lcd_1nov21.ipynb and execute the codes. The segmentation results will be saved to /test/ as a png file in less than a minute. 
 To evaluate your test performance, download the ground truth images to (0_gt.png, 1_gt.png, … 7_gt.png) /test/ folder. Run the evaluation_performance.m file. You will see performance evaluation results using accuracy, precision, recall, Dice’s similarity coefficient, Matthews correlation coefficient, and confusion matrix.
 If you want to test the model with your own images, make sure to rename them from 0 to n-1, where n is the number of images. 
 
