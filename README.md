@@ -19,8 +19,8 @@ Download test_unet5L_cell_11jul21_v001.ipynb to your folder.
 Download eight AFM height test images (0.png … 7.png) to /test/
 Download trained model file ‘unet_cell_seg_v011_5.hdf5’ to /files/. Actually, this file does not belong to the best performing model. The best performing model is U-VGG19 but the file size is larger than 400MB so we decided to put the five layer U-net model 11 which was trained from scratch using log cosh dice. You can see this model and other models' performanes in the valid_performance_results.xlsx file.
 Download data_1ch and model5LHzc.py to your folder.
-Open test_unet5L_lcd_1nov21.ipynb and execute the codes. The segmentation results will be saved to /test/ as a png file in less than a minute. 
-To evaluate your test performance, download the ground truth images to (0_gt.png, 1_gt.png, … 7_gt.png) /test/ folder. Run the evaluation_performance.m file. You will see performance evaluation results using accuracy, precision, recall, Dice’s similarity coefficient, Matthews correlation coefficient, and confusion matrix.
+Open test_unet5L_lcd_1nov21.ipynb in jupyter notebook and execute the codes. The segmentation results will be saved to /test/ as a png file in less than a minute. 
+To evaluate your test performance, download the ground truth images to (0_gt.png, 1_gt.png, … 7_gt.png) /test/ folder. Run the eval_performance.m file. You will see performance evaluation results in terms of accuracy, precision, recall, Dice’s similarity coefficient, and Matthews correlation coefficient.
 If you want to test the model with your own images, make sure to rename them from 0 to n-1, where n is the number of images. 
 
 
