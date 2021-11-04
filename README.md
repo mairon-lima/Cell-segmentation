@@ -25,8 +25,8 @@ If you want to test the segmentation model with your own images, make sure to re
 
 # Training instructions:
 You should have a GPU on your computer to train a model. If you have a GPU on your computer, make sure that you install drivers correctly. This requires attention. We found the following youtube video by Dr. Jeff Heaton very useful for instructions about installing Tensorflow Keras with a GPU for Windows operating systems: https://www.youtube.com/watch?v=-Q6SM_usn84  He also has installation instruction videos for other OS, so check to see his channel. Install Python 3.6, Tensorflow, Keras, numpy, skimage, and jupyter notebook to your computer. You can also train your own model on Google Colab but there are some time restrictions.
-You can see the codes and segmentation results of five-layer Unet with a loss function of log cosh Dice in the train_valid_unet5L_cell_30may21_v001.ipynb. Just open the file with jupyter notebook. You can also see the training experiments of U-VGG19 in train_valid_uVGG19_afmh_cell_27oct21_v014.ipynb.
-If you want to train a model yourself, open train_valid_unet5L_afmh.ipynb with jupyter notebook and run the codes. Lower the batch size if you get memory errors.
+You can see the codes and segmentation results of five-layer Unet with a loss function of log cosh Dice that we trained in our paper, in train_valid_unet5L_cell_30may21_v001.ipynb. You can also see the training results of U-VGG19 in train_valid_uVGG19_afmh_cell_27oct21_v014.ipynb.
+If you want to train a model yourself, download all of the files, open train_valid_unet5L_afmh.ipynb with jupyter notebook and run the codes. Lower the batch size if you get memory errors.
 
 For more information, please refer to our manuscript or contact us by sending an e-mail to corresponding author (tiryakiv@siirt.edu.tr).
 
