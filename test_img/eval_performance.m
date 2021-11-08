@@ -8,7 +8,7 @@ for i1=1:8  % There are 8 test images
  label=imread(fileNameGT); 
  pred=imread(fileNamePredict);
  [acc(i1),cellAcc(i1),cultAcc(i1),iou_cel(i1),iou_cul(i1),mcc(i1), ...
- prec(i1),recall(i1), dsc(i1), dc_cel(i1), dc_cul(i1)]=metrics(label,pred);
+ prec(i1),recall(i1), dsc(i1), dc_cul(i1), dc_cel(i1)]=metrics(label,pred);
 end
 
 mAcc=mean(acc)
