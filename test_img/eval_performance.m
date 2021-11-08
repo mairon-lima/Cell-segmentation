@@ -19,8 +19,6 @@ mMCC=mean(mcc)
 mPrec=mean(prec)
 mRecall=mean(recall)
 
-%mConf=mean(conf_test,3)
-
 mDc=mean(dsc);
 mDcCult=mean(dc_cul);
 mDSCCell=mean(dc_cel)
