@@ -28,6 +28,8 @@ You should have a GPU on your computer to train a model. If you have a GPU on yo
 You can see the codes and segmentation results of five-layer Unet with a loss function of log cosh Dice that we trained in our paper, in train_valid_unet5L_cell_30may21_v001.ipynb. You can also see the training results of U-VGG19 in train_valid_uVGG19_afmh_cell_27oct21_v014.ipynb.
 If you want to train a model yourself, download all of the files, open train_valid_unet5L_afmh.ipynb with jupyter notebook and run the codes. Lower the batch size if you get memory errors.
 
+We have compared our AFM results and electron microscopy results by recently proposed Cellpose and Stardist2D algorithms and uploaded our training reports and ipynb extended source codes under the Cellpose and Stardist2D folders in this repository [18,19].
+
 For more information, please refer to our manuscript or contact us by sending an e-mail to corresponding author (tiryakiv@siirt.edu.tr).
 
 Volkan Müjdat TİRYAKİ, Virginia M. AYRES, Ijaz AHMED, David I. SHREIBER.
