@@ -50,3 +50,5 @@ REFERENCES
 15) Chollet F. Xception: Deep learning with depthwise separable convolutions. Proc. - 30th IEEE Conf. Comput. Vis. Pattern Recognition, CVPR 2017 2017;2017-Janua:1800–1807.
 16) Tomar N. Semantic-Segmentation-Architecture. github 2021.
 17) Siddhartha. Unet Xception Keras for Pneumothorax Segmentation. Kaggle 2019.
+18) von Chamier L, Laine RF, Jukkala J, Spahn C, Krentzel D, Nehme E, Lerche M, Hernández-Pérez S, Mattila PK, Karinou E, Holden S, Solak AC, Krull A, Buchholz TO, Jones ML, Royer LA, Leterrier C, Shechtman Y, Jug F, Heilemann M, Jacquemet G, Henriques R. ZeroCostDL4Mic: An open platform to simplify access and use deep-learning in microscopy. bioRxiv 2020:1–7.
+19) von Chamier L, Laine RF, Jukkala J, Spahn C, Krentzel D, Nehme E, Lerche M, Hernández-Pérez S, Mattila PK, Karinou E, Holden S, Solak AC, Krull A, Buchholz TO, Jones ML, Royer LA, Leterrier C, Shechtman Y, Jug F, Heilemann M, Jacquemet G, Henriques R. Democratising deep learning for microscopy with ZeroCostDL4Mic. Nat. Commun. 2021;12:1–18.
