@@ -37,6 +37,7 @@ If you want to train a model yourself, download all of the files, open train_val
 For more information, please refer to our article below or contact us by sending an e-mail to corresponding author (tiryakiv@siirt.edu.tr).
 
 If you find the research on this repository useful, please consider citing our paper: 
+
 Tiryaki, VM, Ayres, VM, Ahmed, I, Shreiber, DI. Sub-micro scale cell segmentation using deep learning. Cytometry. 2022; 101: 507– 520. https://doi.org/10.1002/cyto.a.24533
 
 Volkan Müjdat TİRYAKİ, Virginia M. AYRES, Ijaz AHMED, David I. SHREIBER.
