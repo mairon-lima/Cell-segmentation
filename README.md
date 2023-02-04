@@ -19,12 +19,12 @@ Install Python 3.6, Tensorflow, Keras, numpy, skimage, and jupyter notebook to y
 Here are the steps to test the pretrained model:
 Download test_unet5L_cell_11jul21_v001.ipynb, data_1ch, and model5LHzc.py to your folder.
 Download eight AFM height test images (0.png … 7.png) to /test/ folder.
-Download trained model file ‘unet_cell_seg_v011_5.hdf5’ to /files/. Actually, this file does not belong to the best performing model. The best performing model is U-VGG19 and it can be downloaded from the following link:
+Download trained model file ‘unet_cell_seg_v011_5.hdf5’ to /files/. Actually, this file belongs to the five layer U-net model. The best performing model is U-VGG19 and it can be downloaded from the following link:
 
 https://drive.google.com/file/d/1fpFdcs5uanobUCI0dDETt75d2U7bRCaD/view?usp=sharing
 
-We have also uploaded the five layer U-net model 11 which was trained from scratch using log cosh dice. 
-Open test_unet5L_lcd_1nov21.ipynb in jupyter notebook, revise it to read the VGG19 model and execute the codes. The segmentation results will be saved to /test/ as a png file in less than a minute. 
+We have uploaded the five layer U-net model 11 which was trained from scratch using log cosh dice. 
+Open test_unet5L_lcd_1nov21.ipynb in jupyter notebook, revise it to read the VGG19 model or keep it as it is to use five-layer U-net, and execute the codes. The segmentation results will be saved to /test/ as a png file in less than a minute. 
 To evaluate your test performance, download the ground truth images (0_gt.png, 1_gt.png, … 7_gt.png) to /test/ folder. Run the eval_performance.m file using Octave or Matlab. You will see performance evaluation results in terms of accuracy, precision, recall, Dice’s similarity coefficient(DSC), and Matthews correlation coefficient (MCC).
 If you want to test the segmentation model with your own images, make sure to rename them from 0 to n-1, where n is the number of images. 
 
