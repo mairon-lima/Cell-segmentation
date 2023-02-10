@@ -6,7 +6,7 @@ train_valid*.ipynb files are the jupyter notebook files that shows the codes and
 
 modelXLHzc* are the U-net model creation files that has 'X' network depth. modelUnetVGG16, modelUnetVGG19, and modelUXception are the U-net model creation files that have coefficients from the VGG16, the VGG19, and the Xception networks [14-17].
 
-data*.py files are the data prepration files required for training, validating, and testing deep learning models. data.py is used when the input is single channel image and the method is transfer learning. data_1ch.py is used when the input image is single channel and the method is learning from scratch. data_3ch.py is used when the input image is three-channel and the method is transfer learning.
+data*.py files are the data preparation files required for training, validating, and testing deep learning models. data.py is used when the input is single channel image and the method is transfer learning. data_1ch.py is used when the input image is single channel and the method is learning from scratch. data_3ch.py is used when the input image is three-channel and the method is transfer learning.
 
 Segmentation performance evaluation codes are provided in eval_performance.m  and metrics.m files under the test folder. Open eval_performance with Octave or Matlab, run the codes and you will see the results of evaluation metrics.
 
